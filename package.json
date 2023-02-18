@@ -1,0 +1,29 @@
+{
+  "name": "luau-ast",
+  "version": "0.0.0",
+  "description": "Luau AST for roblox luau. Supports Parsing and Rendering.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+		"out",
+		"CHANGELOG.md",
+		"!**/*.js.map",
+		"!**/*.tsbuildinfo"
+	],
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "tsc -b",
+    "build-watch": "tsc -b -w",
+    "eslint": "eslint \"src/**/*.ts\" --max-warnings 0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2"
+  }
+}

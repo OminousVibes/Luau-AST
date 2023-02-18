@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"module": "commonjs",
+		"target": "ES2020",
+		"lib": ["ES2020"],
+		"strict": true,
+		"noFallthroughCasesInSwitch": true,
+		"strictNullChecks": true,
+		"esModuleInterop": true,
+		"removeComments": true,
+		"incremental": true,
+		"tsBuildInfoFile": "out/tsconfig.tsbuildinfo",
+		"sourceMap": true,
+
+		"rootDir": "src",
+		"outDir": "out",
+		"baseUrl": "src",
+	}
+}
