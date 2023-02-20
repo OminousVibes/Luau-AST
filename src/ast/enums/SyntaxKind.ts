@@ -1,4 +1,13 @@
 export enum SyntaxKind {
+	// Indexable Expressions
+	Identifier, // e.g. x
+	TemporaryIdentifier, // e.g. _ENV
+	ComputedIndexExpression, // e.g. t[1]
+	PropertyAccessExpression, // e.g. t.x
+	CallExpression, // e.g. f(x)
+	MethodCallExpression, // e.g. t:f(x)
+	ParenthesizedExpression, // e.g. (x + y)
+
 	// Expressions
 	None, // e.g. no expression
 	NilLiteral, // e.g. nil
@@ -15,13 +24,6 @@ export enum SyntaxKind {
 	Map, // e.g. {a = 1, b = 2}
 	Set, // e.g. {1, 2, 3}
 	MixedTable, // e.g. {1, 2, a = 3, b = 4}
-
-	// Expressions that can be indexed
-	Identifier, // e.g. x
-	ComputedIndexExpression, // e.g. t[1]
-	PropertyAccessExpression, // e.g. t.x
-	CallExpression, // e.g. f(x)
-	ParenthesizedExpression, // e.g. (x + y)
 
 	// Statements
 	Assignment, // e.g. x, y = y, x
