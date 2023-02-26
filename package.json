@@ -15,9 +15,11 @@
     "prepublishOnly": "npm run build",
     "build": "tsc -b",
     "build-watch": "tsc -b -w",
-    "eslint": "eslint \"src/**/*.ts\" --max-warnings 0"
+    "eslint": "eslint \"src/**/*.ts\" --max-warnings 0",
+    "grammar": "nearleyc grammar/language.ne -o src/parser/grammar/language.ts"
   },
   "devDependencies": {
+    "@types/nearley": "^2.11.2",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@typescript-eslint/parser": "^5.38.1",
     "eslint": "^8.24.0",
@@ -27,6 +29,7 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "@roblox-ts/luau-ast": "^1.0.8"
+    "moo": "^0.5.2",
+    "nearley": "^2.20.1"
   }
 }
